@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propose</title>
+    <style>
+        #main{
+            max-width: 400px;
+            margin:100px auto;
+            width:100%;
+        }
+        h1{
+            font-style: italic;
+            color:rgb(107, 22, 51);
+        }
+        button {
+         
+        padding: 8px 44px;
+        margin-right: 60px;
+        border: none;
+        background: #d4d;
+        border-radius: 5px;
+        font-size: 18px;
+        }
+#loving h1{
+    color: blueviolet;
+}
+#loving{
+    margin: 100px auto;
+    max-width:400px;
+    width:100%;
+    display:none;
+     
+}
+#no_loving{
+    color:blue;
+}
+#no_loving{
+    margin: 100px auto;
+    max-width:400px;
+    width:100%;
+    display:none;
+}
+ 
+    </style>
+</head>
+<body>
+   <div id="main">
+    <h1>Will You Be My  Girlfriend</h1>
+    <button  id="yes">Yes</button>
+    <button id='no'>No</button>
+   </div>
+   <div id="loving">
+       <h1>❤️❤️❤️❤️❤️❤️❤️❤️❤️ I Love You ❤️❤️❤️❤️</h1>
+   </div>
+   <div id='no_loving'>
+       <h1>😢😢😢😢😢😢I Love You so much you are my first love in my life please try to understand😢😢😢😢😢</h1>
+   </div>
+   <script>
+        document.getElementById('yes').addEventListener('click',function(){
+            document.getElementById('main').style.display='none'
+             document.getElementById('loving').style.display ='block'
+            
+        })
+        document.getElementById('no').addEventListener('click',function(){
+            document.getElementById('main').style.display='none'
+            document.getElementById('no_loving').style.display ='block'
+        })
+   </script>
+</body>
+</html>
